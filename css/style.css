@@ -1,0 +1,39 @@
+/* **************************************************
+    PRINCIPAL STYLES 
+************************************************* **/
+:root{
+    --background-color: #D1FDFF;
+    --primary-color: #102266;
+    --body-color: #000000;
+    --highlight-color: #427C80;
+    --header-color: #F4FBEE;
+}
+
+
+/* **************************************************
+    ANIMATIONS 
+************************************************* **/
+
+
+
+
+/* **************************************************
+    RESPONSIVE 
+************************************************* **/
+@media (max-width: 1450px){
+}
+@media (max-width: 1280px){
+}
+@media (max-width: 900px){
+}
+@media (max-width: 800px){
+}
+@media (max-width:700px){
+}
+@media (max-width: 540px){
+}
+@media (max-width: 440px){
+}
+/* 
+    Y FIN!!? 
+**/

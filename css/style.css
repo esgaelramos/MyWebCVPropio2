@@ -8,12 +8,110 @@
     --highlight-color: #427C80;
     --header-color: #F4FBEE;
 }
+body{
+    font-family: 'Lato';
+    color: var(--body-color);
+    font-family: 'Lato', sans-serif;    
+    line-height: 1.29;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 20px;
+}
+a{
+    /* color: var(--primary-color); */
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* **************************************************
+    HEADER CONTACT 
+************************************************* **/
+header{
+    background-color: var(--header-color);
+}
+.header__container{
+    display: inline-flex;
+    justify-content: space-between;
+    background: radial-gradient(circle,var(--background-color),#D4FAEE);
+    width: 100%;
+    height: 60px;
+    margin-top: 3px;
+}
+.header-img{
+    margin: auto 1vw;
+}
+/* **************************************************
+    BANNER PRINCIPAL 
+************************************************* **/
+.banner{
+    width: 100%;
+    background-color: var(--header-color);
+}
+.banner-title{
+    text-align: left;
+    align-content: center;
+    padding: 1.5vw 2vw;
+    width: 100%;
+    font-size: 30px;
+}
+.banner-img{
+    width: 100%;
+}
+.banner-img img{
+    width: 100%;
+}
+/* --- TYPE WRITER BANNER CARET --- */
+span{
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+/* **************************************************
+    WHY BUY 
+************************************************* **/
+.why{
+    margin: 15px;
+}
+.why-items{
+    margin: 2.0vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.why-exp{
+    width: 100%;
+    padding: 10px 15px;
+}
+.why-img IMG{
+    margin: auto;
+    width: 140px;
+    justify-items: center;
+}
+.why-text{
+    text-align: center;
+}
+
+
 
 
 /* **************************************************
     ANIMATIONS 
 ************************************************* **/
-
+/* --- TYPE WRITER BANNER --- */
+@keyframes caret{
+    50% {
+      border-color: transparent;
+    }
+}
 
 
 
@@ -34,6 +132,6 @@
 }
 @media (max-width: 440px){
 }
-/* 
-    Y FIN!!? 
-**/
+/* **************************************************
+    END? 
+************************************************* **/

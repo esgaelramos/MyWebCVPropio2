@@ -48,7 +48,55 @@ header{
     margin-top: 3px;
 }
 .header-img{
-    margin: auto 1vw;
+    margin: auto 4vw;
+}
+.header-menu{
+    text-align: end;
+}
+/* --- HAMBURGER MENU --- */
+#navbar-button{
+    height: 60px;
+    width: 200px;
+    margin: 1.4vh;
+    /* position: absolute;
+    left: 73%; */
+}
+#navbar-button button{
+    width: 80px;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    border: 0;
+
+}
+#navbar-button button span{
+    border-radius: 5px;
+    background-color: var(--highlight-color);
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+    height: 5px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* --- HAMBURGER NAME ANIMATIONS --- */
+#navbar-button button.open .top-line{
+    animation-name: top-line-animation;
+}
+#navbar-button button.open .mid-line{
+    animation-name: mid-line-animation;
+}
+#navbar-button button.open .bottom-line{
+    animation-name: bottom-line-animation;
+}
+#navbar-button button .top-line{
+    animation-name: top-line-animation-close;
+}
+#navbar-button button .mid-line{
+    animation-name: mid-line-animation-close;
+}
+#navbar-button button .bottom-line{
+    animation-name: bottom-line-animation-close;
 }
 /* **************************************************
     BANNER PRINCIPAL 
@@ -61,17 +109,18 @@ header{
     text-align: left;
     align-content: center;
     padding: 1.5vw 2vw;
-    width: 100%;
-    font-size: 30px;
+    width: 95%;
+    font-size: 28px;
 }
 .banner-img{
     width: 100%;
+    padding-bottom: 10px;
 }
 .banner-img img{
     width: 100%;
 }
 /* --- TYPE WRITER BANNER CARET --- */
-span{
+.cursor-text{
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
 }
@@ -81,8 +130,10 @@ span{
 .why{
     margin: 15px;
 }
+.why-title{
+    margin-bottom: -5px;
+}
 .why-items{
-    margin: 2.0vw;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -91,14 +142,72 @@ span{
     width: 100%;
     padding: 10px 15px;
 }
-.why-img IMG{
+.why-img{
     margin: auto;
+    width: 140px;
+}
+.why-img img{
+    margin: auto;
+    margin-bottom: -25px;
     width: 140px;
     justify-items: center;
 }
 .why-text{
     text-align: center;
 }
+.why-text p strong{
+    font-size: 20px;
+}
+/* **************************************************
+    MODELS 
+************************************************* **/
+.models{
+    margin: 15px;
+}
+.models-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    position: relative;
+}
+.cards {
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 33.33%;
+    transition: all 400ms ease;
+    background-size: cover;
+    background-position: center;
+}
+.cards:hover:not(.active).left {
+    transform: translateX(-50%) rotate(-10deg) scale(0.9);
+}
+.cards:hover:not(.active).right {
+    transform: translateX(50%) rotate(10deg) scale(0.9);
+}
+.cards.left {
+    transform: translateX(-50%) scale(0.9);
+}
+.cards.right {
+    transform: translateX(50%) scale(0.9);
+}
+.cards.active {
+    z-index: 5;
+    position: relative;
+}
+.cards__inner {
+    position: relative;
+    padding-bottom: 158.8235294118%;
+}
+
+
+
+
+
+
+
 
 
 
@@ -106,12 +215,74 @@ span{
 /* **************************************************
     ANIMATIONS 
 ************************************************* **/
+/* --- HAMBURGER MENU HEADER --- */
+@keyframes top-line-animation{
+    0%, 100%{
+        position: relative;
+        top: 10px
+    }
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(5px) rotate(-315deg);
+    }
+}
+@keyframes bottom-line-animation{
+    0%, 100%{
+        position: relative;
+        top: 10px
+    }
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(-5px) rotate(315deg);
+    }
+}
+@keyframes mid-line-animation{
+    20%, 100%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
+@keyframes top-line-animation-close{
+    0%{
+        margin: 0 auto;
+        transform: translateY(5px) rotate(-315deg);
+    }
+    30%, 100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+@keyframes bottom-line-animation-close{
+    0%{
+        margin: 0 auto;
+        transform: translateY(-5px) rotate(315deg);
+    }
+    30%, 100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+@keyframes mid-line-animation-close{
+    0%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    10%, 100%{
+        margin: 0 auto;
+        width: 60%;
+        opacity: 1;
+    }
+}
+/* --- ||| END HAMBURGER MENU ||| --- */
 /* --- TYPE WRITER BANNER --- */
 @keyframes caret{
     50% {
       border-color: transparent;
     }
 }
+
 
 
 

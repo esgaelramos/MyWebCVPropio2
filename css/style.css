@@ -162,21 +162,22 @@ header{
     MODELS 
 ************************************************* **/
 .models{
-    margin: 15px;
+    padding: 15px;
+    background-color: var(--header-color);
 }
 .models-container {
     max-width: 900px;
     margin: auto;
     display: flex;
     justify-content: center;
-    margin-top: 1em;
     position: relative;
 }
 .cards {
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     position: absolute;
-    width: 33.33%;
+    /* width: 33.33%; */
+    width: 50%;
     transition: all 400ms ease;
     background-size: cover;
     background-position: center;
@@ -201,13 +202,145 @@ header{
     position: relative;
     padding-bottom: 158.8235294118%;
 }
+/* **************************************************
+    HOW BUY | STEPS 
+************************************************* **/
+.how{
+    /* background-color: var(--header-color); */
+    padding: 1px 0;
+}
+.how-container{
+    margin: 15px 20px;
+}
+.how-header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.how-items{
+    margin: 2vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.how-exp{
+    padding: 10px 0;
+    width: 100%;
+}
+/* .how-exp{
+    width: 25%;
+    padding: 20px;
+} */
+.how-img{
+    width: 100%
+}
+/* .how-img{
+    margin: auto;
+    width: 170px;
+    justify-items: center;
+} */
+.how-title{
+    position: relative;
+    padding-left: 0px;
+    padding-right: -100px;
+}
+/* .how-title{
+    text-align: center;
+} */
+.how-text{
+    text-align: center
+}
+.how-line{
+    position: absolute;
+    left: 12px;
+    background-color: #102266;
+    margin-top: 50px; 
+    width: 3px;
+    height: 600px;
+}
+/* **************************************************
+    BLOG | TIPS 
+************************************************* **/
+.blog{
+    margin: 15px;
+}
+.blog-items{
+    margin: 3vw 1vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 25px;
+}
+/* .blog-items{
+    margin: 2vw 1vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+} */
+.blog-exp{
+    width: 100%;
+    padding: 10px;
+    outline: var(--highlight-color) solid 2px;
+}
+/* .blog-exp{
+    width: 27%;
+    padding: 20px;
+    outline: var(--highlight-color) solid 2px;
+} */
+.blog-img img{
+    margin: auto;
+    width: 100%;
+}
+.blog-text{
+    text-align: left;
+}
 
 
 
 
 
-
-
+/* **************************************************
+    FOOTER
+************************************************* **/
+.footer-container{
+    background: radial-gradient(circle,var(--primary-color),#103355);
+    color: var(--background-color);
+    padding: 5px;
+}
+.footer-contact{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.contact-item{
+    margin: auto;
+    background-color: #D1FDFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    padding: auto;
+}
+.contact-item:hover{
+    animation: footerContact 3s ease 0s 2 normal none;
+}
+.contact-img{
+    margin: 20%;
+}
+.footer-others{
+    text-align: center;
+}
+/* .footer-others{
+    padding: 10px;
+} */
+.footer-container a{
+    color: var(--background-color);
+}
+.footer-final{
+    text-align: center;
+}
 
 
 

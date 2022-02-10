@@ -57,7 +57,7 @@ header{
 #navbar-button{
     height: 60px;
     width: 200px;
-    margin: 1.4vh;
+    margin: 12px;
     /* position: absolute;
     left: 73%; */
 }
@@ -207,16 +207,45 @@ header{
 ************************************************* **/
 .how{
     /* background-color: var(--header-color); */
-    padding: 1px 0;
+    /* padding: 1px 0; */
 }
 .how-container{
-    margin: 15px 20px;
+    margin: 15px 15px;
 }
+.how-item{
+    margin: -15px 0;
+    outline: 2px solid var(--highlight-color);
+    border-radius: 2px;
+}
+.item-title{
+    text-align: center;
+    background-color: var(--background-color);
+}
+.how-description-impar{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    margin-top: -25px;
+}
+.how-description-par{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    margin-top: -25px;
+}
+.how-img img{
+    max-width: 95%;
+    margin: 0 2px;
+    padding: auto 10px;
+}
+.how-text{
+    padding: 15px 5px;
+}
+
+/* 
 .how-header{
     display: grid;
-    grid-template-columns: 30% 70%;
-}
-.how-items{
+    grid-template-columns: 27% 73%;
+} */
+/* .how-items{
     margin: 2vw;
     display: inline-flex;
     flex-wrap: wrap;
@@ -225,38 +254,39 @@ header{
 .how-exp{
     padding: 10px 0;
     width: 100%;
-}
+} */
 /* .how-exp{
     width: 25%;
     padding: 20px;
 } */
-.how-img{
-    width: 100%
-}
+
 /* .how-img{
     margin: auto;
     width: 170px;
     justify-items: center;
 } */
-.how-title{
-    position: relative;
-    padding-left: 0px;
-    padding-right: -100px;
+/* .how-title{
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin-left: 5px;
 }
+.title-steps{
+    margin: 0px 10px;
+} */
 /* .how-title{
     text-align: center;
 } */
-.how-text{
+/* .how-text{
     text-align: center
-}
-.how-line{
+} */
+/* .how-line{
     position: absolute;
     left: 12px;
     background-color: #102266;
     margin-top: 50px; 
     width: 3px;
     height: 600px;
-}
+} */
 /* **************************************************
     BLOG | TIPS 
 ************************************************* **/

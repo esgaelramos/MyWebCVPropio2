@@ -111,6 +111,7 @@ header{
     top: 50px;
     left: 0px;
     min-width: 100vw;
+    animation: showNavbar 0.7s ease 0s 1 normal none; 
 }
 .option-item{
     text-align: center;
@@ -128,9 +129,13 @@ header{
 ************************************************* **/
 .whatsapp-contact{
     position: fixed;
-    top: 499px;
-    left: 83vw;
+    padding: 10px 10px 5px 10px;
+    top: 32rem;
+    right: 1rem;
     z-index: 100;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    box-shadow: #000000 1px 1px 10px;
 }
 /* **************************************************
     BANNER PRINCIPAL 
@@ -437,6 +442,15 @@ main{
     }
 }
 /* --- ||| END HAMBURGER MENU ||| --- */
+/* --- SHOW NAVBAR --- */
+@keyframes showNavbar{
+    0.0%{
+        transform: translate(50%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
 /* --- TYPE WRITER BANNER --- */
 @keyframes caret{
     50% {

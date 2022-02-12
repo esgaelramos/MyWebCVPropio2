@@ -10,8 +10,3 @@ showNav = function(){
     ubicationPrincipal = Scroll_Now;
 }
 window.addEventListener('scroll', showNav)
-
-// const nav = document.querySelector('#navbar-button button');
-// nav.addEventListener('click', e =>{
-//     nav.classList.toggle('open');
-// });

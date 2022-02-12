@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     function typeWriter(text, i, fnCallback) {
       // chekc if text isn't finished yet
       if (i < (text.length)) {
-        // add next character to h1
+        // add next character to <>
        document.querySelector("typewriterbanner").innerHTML = text.substring(0, i+1) +'<span class="cursor-text" aria-hidden="true"></span>';
   
         // wait for a while and call this function again for next character
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded',function(event){
        if (typeof dataText[i] == 'undefined'){
           setTimeout(function() {
             StartTextAnimation(0);
-          }, 10000);
+          }, 7000);
        }
        // check if dataText[i] exists
       if (i < dataText[i].length) {
@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded',function(event){
       }
     }
     // start the text animation
-    StartTextAnimation(0);
+    setTimeout(function() {
+      StartTextAnimation(0);
+    }, 2000);
   });
 

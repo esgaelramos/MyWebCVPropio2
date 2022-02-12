@@ -1,9 +1,4 @@
-// HAMBURGER MENU
-const nav = document.querySelector('#navbar-button button');
-nav.addEventListener('click', e =>{
-    nav.classList.toggle('open');
-});
-
+// MENU MOBILE AND HAMBURGER MENU
 function showMenuMobile(){
     var menuState = document.getElementById('menu-mobile-options');
     if (menuState.style.display === 'none'){
@@ -11,6 +6,10 @@ function showMenuMobile(){
     } else {
         menuState.style.display = 'none';
     }}
+    const nav = document.querySelector('#navbar-button button');
+    nav.addEventListener('click', e =>{
+    nav.classList.toggle('open');
+    });
 
 
 // document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());

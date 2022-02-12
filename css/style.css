@@ -45,7 +45,7 @@ header{
     justify-content: space-between;
     background: radial-gradient(circle,var(--background-color),#D4FAEE);
     width: 100%;
-    height: 60px;
+    height: 50px;
     margin-top: 3px;
 }
 .header-img{
@@ -61,9 +61,9 @@ header{
     z-index: 100;
 }
 #navbar-button{
-    height: 60px;
+    height: 50px;
     width: 200px;
-    margin: 12px;
+    margin: 6px;
     /* position: absolute;
     left: 73%; */
 }
@@ -108,7 +108,7 @@ header{
     display: none;
     background-color: var(--header-color);
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0px;
     min-width: 100vw;
 }
@@ -122,12 +122,16 @@ header{
     color: var(--highlight-color);
 }
 /* .option-item:hover{
-} */
-
-
-
-
-
+} 
+/* **************************************************
+    WHATSAPP CONTACT
+************************************************* **/
+.whatsapp-contact{
+    position: fixed;
+    top: 499px;
+    left: 83vw;
+    z-index: 100;
+}
 /* **************************************************
     BANNER PRINCIPAL 
 ************************************************* **/
@@ -369,10 +373,6 @@ main{
 .footer-final{
     text-align: center;
 }
-
-
-
-
 /* **************************************************
     ANIMATIONS 
 ************************************************* **/

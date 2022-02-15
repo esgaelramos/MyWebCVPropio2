@@ -38,6 +38,7 @@ ul{
 ************************************************* **/
 header{
     background-color: var(--header-color);
+    height: 70px;
 }
 .header__container{
     display: inline-flex;
@@ -54,6 +55,11 @@ header{
     text-align: end;
 }
 /* --- HAMBURGER MENU --- */
+#header_navbar{
+    position: fixed;
+    transition: top 1.3s;
+    z-index: 100;
+}
 #navbar-button{
     height: 60px;
     width: 200px;
@@ -67,7 +73,6 @@ header{
     background: none;
     cursor: pointer;
     border: 0;
-
 }
 #navbar-button button span{
     border-radius: 5px;
@@ -75,7 +80,7 @@ header{
     display: block;
     width: 50%;
     margin: 5px auto;
-    height: 5px;
+    height: 6px;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -98,9 +103,37 @@ header{
 #navbar-button button .bottom-line{
     animation-name: bottom-line-animation-close;
 }
+/* --- MENU MOBILE OPTIONS --- */
+#menu-mobile-options{
+    display: none;
+    background-color: var(--header-color);
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    min-width: 100vw;
+}
+.option-item{
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+    line-height: 1.7;
+}
+.option-item a{
+    color: var(--highlight-color);
+}
+/* .option-item:hover{
+} */
+
+
+
+
+
 /* **************************************************
     BANNER PRINCIPAL 
 ************************************************* **/
+main{
+    top: 70px;
+}
 .banner{
     width: 100%;
     background-color: var(--header-color);
@@ -130,8 +163,8 @@ header{
 .why{
     margin: 15px;
 }
-.why-title{
-    margin-bottom: -5px;
+.why h2{
+    line-height: 0.3;
 }
 .why-items{
     display: inline-flex;
@@ -140,7 +173,7 @@ header{
 }
 .why-exp{
     width: 100%;
-    padding: 10px 15px;
+    padding: 0 15px;
 }
 .why-img{
     margin: auto;
@@ -164,6 +197,9 @@ header{
 .models{
     padding: 15px;
     background-color: var(--header-color);
+}
+.models h2{
+    line-height: 0.4;
 }
 .models-container {
     max-width: 900px;
@@ -205,10 +241,10 @@ header{
 /* **************************************************
     HOW BUY | STEPS 
 ************************************************* **/
-.how{
+/* .how{
     /* background-color: var(--header-color); */
     /* padding: 1px 0; */
-}
+
 .how-container{
     margin: 15px 15px;
 }
@@ -239,59 +275,14 @@ header{
 .how-text{
     padding: 15px 5px;
 }
-
-/* 
-.how-header{
-    display: grid;
-    grid-template-columns: 27% 73%;
-} */
-/* .how-items{
-    margin: 2vw;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.how-exp{
-    padding: 10px 0;
-    width: 100%;
-} */
-/* .how-exp{
-    width: 25%;
-    padding: 20px;
-} */
-
-/* .how-img{
-    margin: auto;
-    width: 170px;
-    justify-items: center;
-} */
-/* .how-title{
-    margin-top: -20px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-}
-.title-steps{
-    margin: 0px 10px;
-} */
-/* .how-title{
-    text-align: center;
-} */
-/* .how-text{
-    text-align: center
-} */
-/* .how-line{
-    position: absolute;
-    left: 12px;
-    background-color: #102266;
-    margin-top: 50px; 
-    width: 3px;
-    height: 600px;
-} */
 /* **************************************************
     BLOG | TIPS 
 ************************************************* **/
 .blog{
-    margin: 15px;
+    margin: 90px 15px;
+}
+.blog h2{
+    line-height: 0.4;
 }
 .blog-items{
     margin: 3vw 1vw;
@@ -313,6 +304,7 @@ header{
     width: 100%;
     padding: 10px;
     outline: var(--highlight-color) solid 2px;
+    border-radius: 2px;
 }
 /* .blog-exp{
     width: 27%;
@@ -326,7 +318,13 @@ header{
 .blog-text{
     text-align: left;
 }
-
+.blog-text h3{
+    margin: 2px 0;
+    line-height: 1.1;
+}
+.blog-text p{
+    margin: 2px 0;
+}
 
 
 
@@ -386,7 +384,7 @@ header{
     }
     50%, 100%{
         margin: 0 auto;
-        transform: translateY(5px) rotate(-315deg);
+        transform: translateY(6px) rotate(-315deg);
     }
 }
 @keyframes bottom-line-animation{
@@ -396,7 +394,7 @@ header{
     }
     50%, 100%{
         margin: 0 auto;
-        transform: translateY(-5px) rotate(315deg);
+        transform: translateY(-6px) rotate(315deg);
     }
 }
 @keyframes mid-line-animation{
@@ -409,7 +407,7 @@ header{
 @keyframes top-line-animation-close{
     0%{
         margin: 0 auto;
-        transform: translateY(5px) rotate(-315deg);
+        transform: translateY(6px) rotate(-315deg);
     }
     30%, 100%{
         margin: 5px auto;
@@ -419,7 +417,7 @@ header{
 @keyframes bottom-line-animation-close{
     0%{
         margin: 0 auto;
-        transform: translateY(-5px) rotate(315deg);
+        transform: translateY(-6px) rotate(315deg);
     }
     30%, 100%{
         margin: 5px auto;
@@ -443,6 +441,21 @@ header{
 @keyframes caret{
     50% {
       border-color: transparent;
+    }
+}
+/* --- FOOTER CONTACT --- */
+@keyframes footerContact {
+    0.0%{
+        top: -30%;
+        transform: scale(1);
+    }
+    100%{
+        top: -30%;
+        transform: scale(1.01);
+    }
+    33.8%{
+        top: -30%;
+        transform: scale(1.4);
     }
 }
 

@@ -19,21 +19,29 @@
         HEADER    
     ---------- --> 
     <header>
-        <div class="header__container">
+        <div class="header__container" id="header_navbar">
             <div class="header-img">
                 <a href="index.html"><img src="assets/logo.svg" alt="Logo de CVPROPIO" style="width: 60px;"></a>
             </div>
             <div class="header-menu">
-                <div id="navbar-button">
-                    <button>                        
+                <div id="navbar-button" onclick="showMenuMobile();">
+                    <button class="open">                        
                         <span class="top-line"></span>
                         <span class="mid-line"></span>
                         <span class="bottom-line"></span>
                     </button>
+                    <div id="menu-mobile-options">
+                        <li class="option-item"><strong><a href="">INICIO</a></strong></li>
+                        <li class="option-item"><strong><a href="">PRECIOS</a></strong></li>
+                        <li class="option-item"><strong><a href="">PLANTILLAS</a></strong></li>
+                        <li class="option-item"><strong><a href="">CONTACTO</a></strong></li>
+                        <li class="option-item"><strong><a href="">BLOG</a></strong></li>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>     
     </header>
+
 
     <!-- ----------
         MAIN    
@@ -165,12 +173,9 @@
                 </div>
             </div>    
         </section>
-
-        
-           
         <!-- --- BLOG --- -->        
         <section class="blog">
-            <h2>Consejos para un CV Perfecto</h2>
+            <h2>Consejos CV Perfecto</h2>
             <div class="blog-items">
                 <div class="blog-exp">
                     <div class="blog-img">
@@ -226,6 +231,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-contact">
+                <!-- --- FACEBOOK --- -->        
                 <div class="con-item">
                     <a href="https://www.facebook.com/CV-Propio-Mejora-y-Dise%C3%B1a-Hojas-de-Vida-110935324750619">
                         <div class="contact-item contact-facebook">
@@ -233,6 +239,7 @@
                         </div>
                     </a>
                 </div>
+                <!-- --- MAIL --- -->                        
                 <div class="con-item">
                     <a href="mailto:hola@cvpropio.com?Subject=Quiero%20mi%20CV%20PROPIO%20hoy">
                         <div class="contact-item contact-mail">
@@ -240,6 +247,7 @@
                         </div>
                     </a>   
                 </div>
+                <!-- --- INSTAGRAM --- -->                        
                 <div class="con-item">             
                     <a href="https://www.instagram.com/cvpropio">
                         <div class="contact-item contact-instagram">
@@ -248,6 +256,7 @@
                     </a>
                 </div>    
             </div>
+            <!-- --- ADVICES --- -->        
             <div class="footer-others">
                 <p>
                     <a href="">Terminos y Condiciones</a><br>
@@ -259,8 +268,8 @@
         </div>
     </footer>    
     <!-- ---------- JS ---------- -->
-    <script src="js/vue.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
     <script src="js/typewriter.js"></script>
     <script src="js/cards.js"></script>
 </body>

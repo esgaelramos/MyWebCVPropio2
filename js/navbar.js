@@ -1,0 +1,17 @@
+let ubicationPrincipal = window.pageYOffset;
+showNav = function(){
+    let Scroll_Now = window.pageYOffset;
+    if(ubicationPrincipal >= Scroll_Now || ubicationPrincipal < 350){
+        document.getElementById('header_navbar').style.top = '0';
+    }
+    else {
+        document.getElementById('header_navbar').style.top = '-40vh';
+    }
+    ubicationPrincipal = Scroll_Now;
+}
+window.addEventListener('scroll', showNav)
+
+// const nav = document.querySelector('#navbar-button button');
+// nav.addEventListener('click', e =>{
+//     nav.classList.toggle('open');
+// });

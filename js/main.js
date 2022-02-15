@@ -4,6 +4,13 @@ nav.addEventListener('click', e =>{
     nav.classList.toggle('open');
 });
 
+function showMenuMobile(){
+    var menuState = document.getElementById('menu-mobile-options');
+    if (menuState.style.display === 'none'){
+        menuState.style.display = 'block';
+    } else {
+        menuState.style.display = 'none';
+    }}
 
 
 // document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());

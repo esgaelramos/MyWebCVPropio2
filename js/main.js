@@ -12,9 +12,8 @@ function showMenuMobile(){
     });
 
 
+
 // document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
-
-
 // var mainCVP = new Vue({
 //     el: '#main',
 //     // --- DATA --- //

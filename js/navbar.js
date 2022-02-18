@@ -5,7 +5,7 @@ showNav = function(){
         document.getElementById('header_navbar').style.top = '0';
     }
     else {
-        document.getElementById('header_navbar').style.top = '-40vh';
+        document.getElementById('header_navbar').style.top = '-49vh';
     }
     ubicationPrincipal = Scroll_Now;
 }

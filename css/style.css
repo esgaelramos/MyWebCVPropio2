@@ -27,7 +27,6 @@ h5{
     font-size: 20px;
 }
 a{
-    /* color: var(--primary-color); */
     text-decoration: none;
 }
 ul{
@@ -64,8 +63,6 @@ header{
     height: 50px;
     width: 200px;
     margin: 6px;
-    /* position: absolute;
-    left: 73%; */
 }
 #navbar-button button{
     width: 80px;
@@ -130,8 +127,8 @@ header{
 ************************************************* **/
 .whatsapp-contact{
     position: fixed;
-    padding: 10px 10px 5px 10px;
-    top: 30rem;
+    padding: 5px 10px 5px 10px;
+    top: 32rem;
     right: 2rem;
     z-index: 100;
     background-color: var(--background-color);
@@ -491,6 +488,21 @@ main{
     }  
 }
 @media (min-width: 1280px) and (max-width: 1449.9px){
+    /* --- BANNER --- */
+    .banner-container{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+    }
+    .banner-title{
+        width: 95%;
+        font-size: 290%;
+    }
+    .banner-img{
+        width: 95%;
+    }
+    .banner-img img{
+        width: 100%;
+    }
     /* --- WHY --- */
     .why-exp{
         width: 27%;
@@ -519,6 +531,21 @@ main{
     }     
 }
 @media (min-width: 900px) and (max-width: 1279.9px){
+    /* --- BANNER --- */
+    .banner-container{
+        display: grid;
+        grid-template-columns: 30% 1fr;
+    }
+    .banner-title{
+        width: 95%;
+        font-size: 260%;
+    }
+    .banner-img{
+        width: 95%;
+    }
+    .banner-img img{
+        width: 100%;
+    }
     /* --- WHY --- */
     .why-exp{
         width: 27%;
@@ -547,6 +574,21 @@ main{
     } 
 }
 @media (min-width: 800px) and (max-width: 899.9px){
+    /* --- BANNER --- */
+    .banner-container{
+        display: grid;
+        grid-template-columns: 35% 1fr;
+    }
+    .banner-title{
+        width: 95%;
+        font-size: 220%;
+    }
+    .banner-img{
+        width: 95%;
+    }
+    .banner-img img{
+        width: 100%;
+    }
     /* --- WHY --- */
     .why-exp{
         width: 40%;
@@ -575,6 +617,21 @@ main{
     }         
 }
 @media (min-width:700px) and (max-width: 799.9px){
+    /* --- BANNER --- */
+    .banner-container{
+        display: grid;
+        grid-template-columns: 35% 1fr;
+    }
+    .banner-title{
+        width: 95%;
+        font-size: 200%;
+    }
+    .banner-img{
+        width: 95%;
+    }
+    .banner-img img{
+        width: 100%;
+    }    
     /* --- WHY --- */
     .why-exp{
         width: 43%;
@@ -603,6 +660,21 @@ main{
     }      
 }
 @media (min-width: 500px) and (max-width: 699.9px){
+    /* --- BANNER --- */
+    .banner-container{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+    }
+    .banner-title{
+        width: 100%;
+        font-size: 170%;
+    }
+    .banner-img{
+        width: 95%;
+    }
+    .banner-img img{
+        width: 100%;
+    }  
     /* --- WHY --- */
     .why-exp{
         width: 40%;

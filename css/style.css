@@ -111,6 +111,15 @@ header{
     animation: showNavbar 0.7s ease 0s 1 normal none;
     animation-fill-mode: forwards;
 }
+.option-item-pc{
+    list-style: none;
+    margin: auto;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.option-item-pc a{
+    color: var(--highlight-color);
+}
 .option-item{
     text-align: center;
     font-size: 20px;
@@ -469,6 +478,16 @@ main{
     RESPONSIVE 
 ************************************************* **/
 @media (min-width: 1450px){
+    /* --- MENU PC --- */
+    .header-menu{
+        display: none;
+    }
+    #menu-mobile-options{
+        display: none;
+    }
+    #menu-pc-options{
+        display: flex;
+    }
     /* --- WHY --- */
     .why-exp{
         width: 27%;
@@ -488,6 +507,16 @@ main{
     }  
 }
 @media (min-width: 1280px) and (max-width: 1449.9px){
+    /* --- MENU PC --- */
+    .header-menu{
+        display: none;
+    }
+    #menu-mobile-options{
+        display: none;
+    }
+    #menu-pc-options{
+        display: flex;
+    }
     /* --- BANNER --- */
     .banner-container{
         display: grid;
@@ -531,6 +560,16 @@ main{
     }     
 }
 @media (min-width: 900px) and (max-width: 1279.9px){
+    /* --- MENU PC --- */
+    .header-menu{
+        display: none;
+    }
+    #menu-mobile-options{
+        display: none;
+    }
+    #menu-pc-options{
+        display: flex;
+    }
     /* --- BANNER --- */
     .banner-container{
         display: grid;
@@ -574,6 +613,16 @@ main{
     } 
 }
 @media (min-width: 800px) and (max-width: 899.9px){
+    /* --- MENU PC --- */
+    .header-menu{
+        display: none;
+    }
+    #menu-mobile-options{
+        display: none;
+    }
+    #menu-pc-options{
+        display: flex;
+    }
     /* --- BANNER --- */
     .banner-container{
         display: grid;
@@ -617,6 +666,16 @@ main{
     }         
 }
 @media (min-width:700px) and (max-width: 799.9px){
+    /* --- MENU PC --- */
+    .header-menu{
+        display: none;
+    }
+    #menu-mobile-options{
+        display: none;
+    }
+    #menu-pc-options{
+        display: flex;
+    }
     /* --- BANNER --- */
     .banner-container{
         display: grid;
@@ -660,6 +719,13 @@ main{
     }      
 }
 @media (min-width: 500px) and (max-width: 699.9px){
+    /* --- MENU PC --- */
+    #menu-mobile-options{
+        display: block;
+    }
+    #menu-pc-options{
+        display: none;
+    }
     /* --- BANNER --- */
     .banner-container{
         display: grid;
@@ -702,7 +768,14 @@ main{
         padding: 15px;
     }
 }
-@media (min-width: 440px) and (max-width: 499.9px){
+@media (min-width: 0px) and (max-width: 499.9px){
+    /* --- MENU PC --- */
+    #menu-mobile-options{
+        display: block;
+    }
+    #menu-pc-options{
+        display: none;
+    }
 }
 /* **************************************************
     END? 

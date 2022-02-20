@@ -120,6 +120,9 @@ header{
 .option-item-pc a{
     color: var(--highlight-color);
 }
+.option-item-pc a:hover{
+    color: var(--body-color);
+}
 .option-item{
     text-align: center;
     font-size: 20px;
@@ -129,16 +132,17 @@ header{
 .option-item a{
     color: var(--highlight-color);
 }
-/* .option-item:hover{
+.option-item a:hover{
+    color: var(--body-color);
 } 
 /* **************************************************
     WHATSAPP CONTACT
 ************************************************* **/
 .whatsapp-contact{
-    position: fixed;
+    position: fixed;    
     padding: 5px 10px 5px 10px;
-    top: 32rem;
-    right: 2rem;
+    top: 500px;
+    right: 20px;
     z-index: 100;
     background-color: var(--background-color);
     border-radius: 50%;
